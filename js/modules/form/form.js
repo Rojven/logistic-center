@@ -87,10 +87,10 @@ export default class Form extends FormValidation {
     
                 postData(this.path, formData)
                 .then(() => {
-                    
+                     this.messageBlock.textContent = this.message.success;
                 })
                 .catch(() => {
-                    this.messageBlock.textContent = this.message.success;
+                    this.messageBlock.textContent = this.message.failure;
                 })
                 .finally(() => {
                     this.clearInputs(this.inputs);
