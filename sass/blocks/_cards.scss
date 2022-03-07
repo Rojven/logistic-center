@@ -1,0 +1,66 @@
+.cards {
+    padding: 2vh 0 3vh 0;
+    min-height: 20vh;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 200px;
+        width: 100%;
+        background-color: var(--background-secondary);
+        z-index: -1;
+        margin-top: -2px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 120px;
+        width: 110%;
+        height: 200px;
+        background-color: var(--background-primary);
+        transform: rotate(-2deg);
+        z-index: -1;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    width: 25%;
+    min-width: 250px;
+    min-height: 380px;
+    border-radius: 30px;
+    margin: 0 10px 20px 10px;
+    padding: 40px;
+    border: 3px solid var(--background-secondary);
+    background-color: var(--background-primary);
+    &__title {
+        padding: 2vh 0 3vh 0;
+        width: 50%;
+        font-size: min(max(24px,1.5vw),60px);
+    }
+    &__subtitle {
+        font-size: min(max(14px,0.9vw),38px);
+    }
+    &__icon {
+        width: min(max(40px, 3vw), 100px);
+        transition: 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1) rotate(-360deg); 
+        }
+    }
+    &_car {
+        width: 100%;
+        min-height: 41vh;
+        margin: 0 0 40px 0;
+        padding: 45px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

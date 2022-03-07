@@ -1,0 +1,51 @@
+.about {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__info {
+        max-width: 35%;
+        margin: 0 0 0 auto;
+        text-align: right;
+    }
+    &__img {
+        width: 60%;
+        height: 50vh;
+        background: url('../img/about.svg') center (center/contain) no-repeat;
+    }
+    &__title {
+        font-size: min(max(35px,2vw),70px);
+        max-width: 90%;
+        margin: 0 0 0 auto;
+        text-align: right;
+    }
+    &__descr {
+        padding: 5vh 0;
+        max-width: 90%;
+        margin: 0 0 0 auto;
+        text-align: right;
+    }
+    &__features {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__feature {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5px 40px 5px; 
+
+    }
+    &__feature-descr {
+        width: 8vw;
+        font-size: min(max(14px,0.9vw),38px);
+    }
+    &__feature-icon {
+        width: min(max(30px, 2vw), 70px);
+        transition: 0.3s ease-in;
+        &:hover {
+            transform: scale(1.1) rotate(-360deg); 
+        }
+    }
+}

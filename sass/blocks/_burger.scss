@@ -1,0 +1,81 @@
+.burger-button {
+    width: 7%;
+    height: 2vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    div {
+        width: 100%;
+        height: 0.3vh;
+        background-color: var(--text-primary);
+    }
+}
+
+.burger {
+    position: absolute;
+    height: 100vh;
+    width: 70%;
+    top: 0;
+    right: 0;
+    background-color: var(--background-primary);
+    z-index: 10;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: 0.5s all;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    &_active {
+        transform: translateX(0);
+    }
+    &__close {
+        width: 15%;
+        height: 5vh;
+        padding-bottom: 15vh;
+        cursor: pointer;
+        div {
+            font-size: min(max(40px, 9vw), 60px);
+            color: var(--text-primary);
+            width: 100%;
+            height: 100%;
+        } 
+    }
+    &__menu {
+        height: 60vh;
+        
+    }
+    &__item {
+        font-family: 'Oswald', sans-serif;
+        font-size: min(max(26px, 4vw), 60px);
+        color: var(--text-secondary);
+        padding: 1vh 0;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+        &:hover,
+        &:active,
+        &:focus {
+            color: var(--text-primary);
+        }
+    }
+    .burger-deeds {
+        padding-bottom: 10vh;
+    }
+}
+
+.bg {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 8;
+    display: none;
+    &_active {
+        display: block;
+    }
+}
+    
+
+        
+

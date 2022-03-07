@@ -1,0 +1,38 @@
+.sec-header {
+    position: relative;
+    overflow: hidden;
+    height: 143px;
+    width: 100%;
+    background-color: var(--background-secondary);
+    transform: rotate(180deg);
+    padding: 1.5vh 0;
+    &_reversed {
+        transform: rotate(0);
+    }
+    &_footer {
+        padding: 30px 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 120px;
+        width: 110%;
+        height: 200px;
+        background-color: var(--background-primary);
+        transform: rotate(-2deg);
+    }
+    &__title {
+        transform: rotate(180deg);
+        text-align: right;
+        text-transform: uppercase;
+        font-size: min(max(50px, 4vw), 150px);
+        &_reversed {
+            transform: rotate(0);
+            text-align: left;
+        }
+    }
+}
+
+.sec-wrapper {
+    padding: 10vh 0;
+}

@@ -1,0 +1,13 @@
+.footer {
+    &__wrapper {
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__text {
+        transform: rotate(180deg);
+        text-align: center;
+        font-size: min(max(14px,1vw),30px);
+        margin-top: -20px;
+    }
+}

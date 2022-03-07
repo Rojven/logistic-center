@@ -1,0 +1,48 @@
+.services {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__info {
+        max-width: 40%;
+    }
+    &__img {
+        width: 50%;
+        height: 45vh;
+        background: url('../img/boxes.svg') center (center/contain) no-repeat;
+    }
+    &__title {
+        font-size: min(max(35px,2vw),70px);
+        max-width: 90%;
+    }
+    &__descr {
+        padding: 5vh 0;
+        max-width: 90%;
+        
+    }
+    &__features {
+        background-color: rgba($color: #e2e2e2, $alpha: 0.26);
+        border-radius: 30px;
+        padding: 50px;
+    }
+    &__features-title {
+        font-size: min(max(26px,2vw),60px);
+        padding-bottom: 7vh;
+    }
+    &__features-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__feature {
+        max-width: 40%;
+    }
+    &__feature-title {
+        font-size: min(max(20px,1.2vw),50px);
+    }
+    &__feature-descr {
+        font-size: min(max(14px,0.9vw),38px);
+        margin: 20px 0 80px 0;
+    }
+}

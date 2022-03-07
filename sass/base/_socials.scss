@@ -1,0 +1,22 @@
+.socials {
+    min-width: 140px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    &__icon {
+        width: min(max(20px, 1.2vw), 80px);
+        transition: 0.3s ease-in;
+        &:hover,
+        &:active,
+        &:focus {
+            transform: translateY(-1vh) scale(1.1) rotate(360deg);
+        }
+    }
+    &_footer {
+        align-items: flex-end;
+        width: 10%;
+        margin-bottom: 10px;
+    }
+}

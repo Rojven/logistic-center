@@ -1,0 +1,36 @@
+.carpark {
+    &__img-box {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    &__img {
+        width: 90%;
+        &_reversed {
+            transform: scale(-1,1);
+        }
+    }
+    &__info {
+        max-width: 30%;
+        &_right {
+            text-align: right;
+        }
+    }
+    &__title {
+        font-size: min(max(20px,1.5vw),50px);
+        padding-bottom: 3vh;
+    }
+    &__divider {
+        height: 3px;
+        width: 100px;
+        background-color: var(--background-secondary);
+        border-radius: 3px;
+        margin: 4vh 0 2vh 0;
+        &_right {
+            margin: 4vh 0 2vh auto;
+        }
+    }
+    &__descr {
+        font-size: min(max(14px,0.9vw),38px);
+    }
+}
