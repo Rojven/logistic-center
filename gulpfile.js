@@ -10,7 +10,7 @@ const rename = require("gulp-rename");
 const htmlmin = require('gulp-htmlmin');
 
 const dist = "./dist/";
-//const dist = "/Programming/MAMP/htdocs/test"; // Ссылка на вашу папку на сервере
+//const dist = "/Programming/MAMP/htdocs/test";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/*.html")
